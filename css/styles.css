@@ -98,7 +98,6 @@ p {
 /* Testimonial Section*/
 
 #testimonials {
-    padding: 7% 15%;
     text-align: center;
     background-color: #ef8172;
     color: #fff;
@@ -108,6 +107,11 @@ p {
     width: 10%;
     border-radius: 100%;
     margin: 20px;
+}
+
+/* to have the arrows a little aside from the images in the carousel */
+.carousel-item {
+    padding: 7% 15%;
 }
 
 #press {
