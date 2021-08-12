@@ -124,3 +124,17 @@ p {
     width: 15%;
     margin: 20px 20px 50px;
 }
+
+/* Pricing Section */
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.card { /* the right card was bigger so change the cards height for all to be the same */
+    height: 100%;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
