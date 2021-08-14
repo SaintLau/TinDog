@@ -8,7 +8,7 @@ body {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1 {  
@@ -71,14 +71,19 @@ p {
 
 /* title image (mobile with the dog) */
 .title-image {
-    width: 60%;
+    max-width: 60%; /* need to be max-width in order for the img to stay in place*/
     transform: rotate(25deg);
+    position: absolute;
+    right: 22%;
 }
 
 
 /* Features Section */
 #features {
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    /*z-index: 1; since features comes below in the html, IN THIS CASE, we don't actually need the z-index */
 }
 
 .feature-box {
