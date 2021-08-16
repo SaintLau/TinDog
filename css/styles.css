@@ -1,31 +1,11 @@
+/* Code is Refactor to be DRY - Don't Repeat Yourself */
+
 body {
     font-family: 'Montserrat';
+    text-align: center;
 }
 
-#title {
-    background-color: #ff4c68;
-    color: #fff;
-}
-
-.container-fluid {
-    padding: 3% 15% 7%;
-}
-
-h1 {  
-    font-family: 'Montserrat', sans-serif;  
-    font-size: 3.5rem;  
-    line-height: 1.5;  
-    font-weight: 900;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: 900;
-}
-
-h3 {
+h1, h2, h3, h4, h5, h6 {  
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
@@ -33,6 +13,24 @@ h3 {
 p {
     color: #8f8f8f;
 }
+
+/* HEADINGS */
+.big-heading {
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 3.5rem;  
+    line-height: 1.5;  
+    font-weight: 900;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+ /* Containers */
+.container-fluid {
+    padding: 7% 15%;
+}
+
 /* Navigation Bar */
 /* because of BootStrap 5, need to target the major div (container) to make the brand and text align*/
 .container{
@@ -69,6 +67,18 @@ p {
 }
 
 
+/* Title Section */
+
+#title {
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
 /* title image (mobile with the dog) */
 .title-image {
     max-width: 60%; /* need to be max-width in order for the img to stay in place*/
@@ -80,14 +90,16 @@ p {
 
 /* Features Section */
 #features {
-    padding: 7% 15%;
     background-color: #fff;
     position: relative;
     /*z-index: 1; since features comes below in the html, IN THIS CASE, we don't actually need the z-index */
 }
 
+.feature-title {
+    font-size: 1.5;
+}
+
 .feature-box {
-    text-align: center;
     padding: 5%;
 }
 
@@ -103,9 +115,13 @@ p {
 /* Testimonial Section*/
 
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
     color: #fff;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonial-image {
@@ -115,13 +131,8 @@ p {
 }
 
 /* to have the arrows a little aside from the images in the carousel */
-.carousel-item {
-    padding: 7% 15%;
-}
-
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -133,11 +144,15 @@ p {
 /* Pricing Section */
 #pricing {
     padding: 100px;
-    text-align: center;
 }
 
 .card { /* the right card was bigger so change the cards height for all to be the same */
     height: 100%;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .pricing-column {
@@ -148,22 +163,11 @@ p {
 #cta {
     background-color: #ff4c68;
     color: #fff;
-    padding: 7% 15%;
-    text-align: center;
-}
-
-.cta-heading {
-    font-family: 'Montserrat', sans-serif;  
-    font-size: 3.5rem;  
-    line-height: 1.5;  
-    font-weight: 900;
 }
 
 /* Footer Section */
 #footer {
     background-color: #fff;
-    padding: 7% 15%;
-    text-align: center;
 }
 
 .social-icon {
