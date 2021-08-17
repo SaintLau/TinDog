@@ -31,7 +31,18 @@ p {
     padding: 7% 15%;
 }
 
+/* Sections */
+.colored-section {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
 /* Navigation Bar */
+
 /* because of BootStrap 5, need to target the major div (container) to make the brand and text align*/
 .container{
     padding-left: 0;
@@ -69,14 +80,9 @@ p {
 
 /* Title Section */
 
-#title {
-    background-color: #ff4c68;
-    color: #fff;
-    text-align: left;
-}
-
 #title .container-fluid {
     padding: 3% 15% 7%;
+    text-align: left;
 }
 
 /* title image (mobile with the dog) */
@@ -90,7 +96,6 @@ p {
 
 /* Features Section */
 #features {
-    background-color: #fff;
     position: relative;
     /*z-index: 1; since features comes below in the html, IN THIS CASE, we don't actually need the z-index */
 }
@@ -116,7 +121,6 @@ p {
 
 #testimonials {
     background-color: #ef8172;
-    color: #fff;
 }
 
 .testimonial-text {
@@ -159,17 +163,10 @@ p {
     padding: 3% 2%;
 }
 
-/* Call To Action Section */
-#cta {
-    background-color: #ff4c68;
-    color: #fff;
-}
+/* Call To Action - CTA Section */
+
 
 /* Footer Section */
-#footer {
-    background-color: #fff;
-}
-
 .social-icon {
     margin: 20px 10px;
 }
